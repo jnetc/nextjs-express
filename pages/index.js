@@ -21,7 +21,7 @@ const Home = ({ data }) => {
   const handleOnSubmit = async e => {
     e.preventDefault();
     setSendMsg('Sending...');
-    const res = await fetch('http://localhost:3000/sendgrid/', {
+    const res = await fetch('/sendgrid', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
